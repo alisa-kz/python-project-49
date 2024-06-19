@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 
 
-from brain_games import cli
+from brain_games import game_even
 
 
 def main():
-    cli.welcome_user()
-
+    game_even.is_even_game()
+    
 
 if __name__ == '__main__':
     main()
