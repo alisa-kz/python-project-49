@@ -1,25 +1,19 @@
 #!/usr/bin/env python3
 
-from random import randint
+
 import prompt
 from brain_games import cli
 
 
-def is_even(num):
-  if num % 2 == 0:
-      return 'yes'
-  return 'no'
-
-
-def is_even_game():
+def manage_game(module):
   name = cli.welcome_user()
-  print('Answer "yes" if the number is even, otherwise answer "no".')
+  print(module.description())
   num_of_inputs = 3
   for i in range(num_of_inputs):
-      random_num = randint(1, 100)
-      print(f'Question: {random_num}')
+      module.lets_game()
+      condition, correct_answer = module.lets_game()
+      print(f'Question: {condition}')
       user_answer = prompt.string('Your answer: ')
-      correct_answer = is_even(random_num)
       if user_answer == correct_answer:
           print('Correct!')
       else:
@@ -30,7 +24,7 @@ def is_even_game():
   return
 
 def main():
-    is_even_game()
+    manage_game()
 
 if __name__ == '__main__':
     main()

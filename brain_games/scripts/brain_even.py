@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 
 
-from brain_games import game_even
-
+from brain_games.games import even
+from brain_games import manager
 
 def main():
-    game_even.is_even_game()
+    manager.manage_game(even)
     
 
 if __name__ == '__main__':
