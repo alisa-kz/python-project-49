@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "It's brain games. 5 games to test your brain!"
 authors = ["Alisa Kuzyagina <khairutdinovaaalisa@gmail.com>"]
 readme = "README.md"
 packages = [
@@ -16,6 +16,7 @@ prompt = "^0.4.1"
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"
 
 [tool.poetry.group.dev.dependencies]
 flake8 = "^7.1.0"
