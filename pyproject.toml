@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "It's brain games. 5 games to test your brain!"
+description = "It's brain games. Five games to test your brain!"
 authors = ["Alisa Kuzyagina <khairutdinovaaalisa@gmail.com>"]
 readme = "README.md"
 packages = [
