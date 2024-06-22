@@ -4,6 +4,7 @@
 from brain_games.games import progression
 from brain_games import manager
 
+
 def main():
     manager.manage_game(progression)
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 
-from random import randint, choice
+from random import randint
 
 
 def lets_game():
@@ -24,6 +24,7 @@ def lets_game():
 
 def description():
     return 'What number is missing in the progression?'
+
 
 def main():
     lets_game()

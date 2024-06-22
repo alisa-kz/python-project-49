@@ -5,9 +5,9 @@ from random import randint
 
 
 def is_even(num):
-  if num % 2 == 0:
-      return 'yes'
-  return 'no'
+    if num % 2 == 0:
+        return 'yes'
+    return 'no'
 
 
 def description():
@@ -26,4 +26,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
