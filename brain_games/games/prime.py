@@ -5,6 +5,8 @@ from random import randint
 
 
 def is_prime(num):
+    if num < 2 or num == 4:
+        return 'no'
     for i in range(2, num // 2):
         if num % i == 0:
             return 'no'
