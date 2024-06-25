@@ -3,6 +3,8 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/ce98e1ebc9372648e7ce/maintainability)](https://codeclimate.com/github/alisa-kz/python-project-49/maintainability)
 
+Welcome to the Brain Games!
+
 [![asciicast](https://asciinema.org/a/5uMQ2ItE3WNdXD9QMklkAutG0.svg)](https://asciinema.org/a/5uMQ2ItE3WNdXD9QMklkAutG0)
 
 [![asciicast](https://asciinema.org/a/SwoLYe5leB1LAUX3ODS9UAhcz.svg)](https://asciinema.org/a/SwoLYe5leB1LAUX3ODS9UAhcz)

@@ -7,10 +7,19 @@ readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+    "Intended Audience :: Everybody",
+    "Operating System :: Ubuntu",
+    "Programming Language :: Python :: 3.12",
+    "Development Status :: 3 - Alpha",
+]
 
 [tool.poetry.dependencies]
 python = "^3.12"
 prompt = "^0.4.1"
+
+[tool.poetry.urls]
+Repository = "https://github.com/alisa-kz/python-project-49"
 
 [tool.poetry.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
