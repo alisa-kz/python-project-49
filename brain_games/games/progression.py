@@ -1,34 +1,27 @@
-#!/usr/bin/env python3
-
-
 from random import randint
+DESCRIPTION = 'What number is missing in the progression?'
+
+
+def find_num(len_of_list, element, step, progression, position):
+    """
+    Find element of progression
+    """
+    for i in range(len_of_list):
+        element += step
+        progression.append(element)
+    return str(progression[position - 1])
 
 
 def lets_game():
+    """
+    Describes the condition and the correct answer
+    """
     element = randint(1, 100)
     step = randint(1, 10)
-    length_of_progression = randint(5, 10)
-    position = randint(1, length_of_progression)
-    progression_list = []
-    progression = ''
-    for i in range(length_of_progression):
-        element += step
-        progression_list.append(element)
-    correct_answer = str(progression_list[position - 1])
-    progression_list[position - 1] = '..'
-    for char in progression_list:
-        progression = progression + str(char) + ' '
-    condition = progression.rstrip()
+    len_of_list = randint(5, 10)
+    position = randint(1, len_of_list)
+    progression = []
+    correct_answer = find_num(len_of_list, element, step, progression, position)
+    progression[position - 1] = '..'
+    condition = ' '.join(progression)
     return condition, correct_answer
-
-
-def description():
-    return 'What number is missing in the progression?'
-
-
-def main():
-    lets_game()
-
-
-if __name__ == '__main__':
-    main()

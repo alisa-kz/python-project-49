@@ -1,13 +1,13 @@
-#!/usr/bin/env python3
-
-
 import prompt
 from brain_games import cli
 
 
 def manage_game(module):
+    """
+    Controls the game
+    """
     name = cli.welcome_user()
-    print(module.description())
+    print(module.DESCRIPTION)
     num_of_inputs = 3
     for i in range(num_of_inputs):
         module.lets_game()
@@ -22,12 +22,3 @@ def manage_game(module):
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')
-    return
-
-
-def main():
-    manage_game()
-
-
-if __name__ == '__main__':
-    main()
