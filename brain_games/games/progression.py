@@ -8,8 +8,8 @@ def find_num(len_of_list, element, step, progression, position):
     """
     for i in range(len_of_list):
         element += step
-        progression.append(element)
-    return str(progression[position - 1])
+        progression.append(str(element))
+    return progression[position - 1]
 
 
 def lets_game():
