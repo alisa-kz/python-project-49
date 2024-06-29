@@ -1,4 +1,6 @@
 from random import randint
+
+
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 
@@ -11,15 +13,15 @@ def calc_gcd(first_num, second_num):
             first_num = first_num % second_num
         else:
             second_num = second_num % first_num
-    return str(max(first_num, second_num))
+    return max(first_num, second_num)
 
 
-def lets_game():
+def get_round():
     """
     Describes the condition and the correct answer
     """
     first_num = randint(1, 100)
     second_num = randint(1, 100)
     condition = f'{first_num} {second_num}'
-    correct_answer = calc_gcd(first_num, second_num)
+    correct_answer = str(calc_gcd(first_num, second_num))
     return condition, correct_answer

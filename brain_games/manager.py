@@ -10,8 +10,8 @@ def manage_game(module):
     print(module.DESCRIPTION)
     num_of_inputs = 3
     for i in range(num_of_inputs):
-        module.lets_game()
-        condition, correct_answer = module.lets_game()
+        module.get_round()
+        condition, correct_answer = module.get_round()
         print(f'Question: {condition}')
         user_answer = prompt.string('Your answer: ')
         if user_answer == correct_answer:

@@ -1,4 +1,6 @@
 from random import randint
+
+
 DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -11,7 +13,7 @@ def is_even(num):
     return False
 
 
-def lets_game():
+def get_round():
     """
     Describes the condition and the correct answer
     """

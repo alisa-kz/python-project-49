@@ -1,8 +1,10 @@
 from random import randint, choice
+
+
 DESCRIPTION = 'What is the result of the expression?'
 
 
-def lets_calc(operation, first_operand, second_operand):
+def calculate(operation, first_operand, second_operand):
     """
     Addition, subtraction or multiplication of numbers
     """
@@ -14,7 +16,7 @@ def lets_calc(operation, first_operand, second_operand):
         return str(first_operand * second_operand)
 
 
-def lets_game():
+def get_round():
     """
     Describes the condition and the correct answer
     """
@@ -23,5 +25,5 @@ def lets_game():
     list_of_operations = '+-*'
     operation = choice(list_of_operations)
     condition = f'{str(first_operand)} {operation} {str(second_operand)}'
-    correct_answer = lets_calc(operation, first_operand, second_operand)
+    correct_answer = calculate(operation, first_operand, second_operand)
     return condition, correct_answer

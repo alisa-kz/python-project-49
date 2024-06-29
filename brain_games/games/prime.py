@@ -1,4 +1,6 @@
 from random import randint
+
+
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -14,7 +16,7 @@ def is_prime(num):
     return True
 
 
-def lets_game():
+def get_round():
     """
     Describes the condition and the correct answer
     """
